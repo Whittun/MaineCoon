@@ -25,11 +25,11 @@ $(".pets__cat-button").click(function(){
     $(".pets__block-image").css('display', 'none'); 
     $(".pets__cat-button").removeClass('pets__cat-button--active');
     $(this).addClass('pets__cat-button--active');
-    if($(event.target).attr("class").indexOf('cat-m') !== -1) {
+    if($(this).attr("class").indexOf('cat-m') !== -1) {
         $(".pets__block-image--cat-m").css('display', display);
-    } else if($(event.target).attr("class").indexOf('cat-w') !== -1) {
+    } else if($(this).attr("class").indexOf('cat-w') !== -1) {
         $(".pets__block-image--cat-w").css('display', display);
-    } else if($(event.target).attr("class").indexOf('kitty') !== -1) {
+    } else if($(this).attr("class").indexOf('kitty') !== -1) {
         $(".pets__block-image--kitty").css('display', display);
     }
 });
